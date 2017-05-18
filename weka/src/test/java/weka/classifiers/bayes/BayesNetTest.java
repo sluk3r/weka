@@ -38,13 +38,14 @@ public class BayesNetTest extends AbstractClassifierTest {
 
   /** Creates a default BayesNet */
   public Classifier getClassifier() {
-    return new BayesNet();
+    return new BayesNet();//wxc 2017-5-18:10:32:38 核心应该是在这里。
   }
 
   public static Test suite() {
     return new TestSuite(BayesNetTest.class);
   }
 
+  //wxc pro 2017-5-18:10:32:01 看到运行日志里有这个 successfully loaded C:\Users\ADMINI~1\AppData\Local\Temp\jniloader4617772725337963706netlib-native_ref-win-x86_64.dll， 这是什么个意思？
   public static void main(String[] args){
     junit.textui.TestRunner.run(suite());
   }

@@ -255,7 +255,7 @@ public abstract class AbstractClassifierTest extends TestCase {
    */
   @SuppressWarnings("unchecked")
   @Override
-  protected void setUp() throws Exception {
+  protected void setUp() throws Exception { //wxc pro 2017-5-18:10:28:19 setup里能做什么？准备些数据，这些数据的生成规则怎样？对应的检验又是怎样？
     m_Classifier = getClassifier();
     m_Tester = getTester();
     m_OptionTester = getOptionTester();
@@ -286,7 +286,7 @@ public abstract class AbstractClassifierTest extends TestCase {
     // initialize missing values handling
     for (int i = FIRST_CLASSTYPE; i <= LAST_CLASSTYPE; i++) {
       // does the scheme support this type of class at all?
-      if (!canPredict(i)) {
+      if (!canPredict(i)) { //wxc pro 2017-5-18:10:31:16 这是个什么概念？
         continue;
       }
 
