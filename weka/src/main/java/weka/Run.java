@@ -49,13 +49,14 @@ import weka.core.WekaPackageClassLoaderManager;
  */
 public class Run {
 
+  //wxc pro 2017-7-21:13:51:58 这里的Schema是什么概念？
   public enum SchemeType {
     CLASSIFIER("classifier"), CLUSTERER("clusterer"), ASSOCIATOR(
       "association rules"), ATTRIBUTE_SELECTION("attribute selection"), FILTER(
       "filter"), LOADER("loader"), SAVER("saver"), DATAGENERATOR(
       "data generator"), COMMANDLINE("general commandline runnable");
 
-    private final String m_stringVal;
+    private final String m_stringVal;//wxc pro 2017-7-21:13:52:25 这里的m代表什么？
 
     SchemeType(String name) {
       m_stringVal = name;
@@ -140,13 +141,13 @@ public class Run {
           .println("Usage:\n\tweka.Run [-no-scan] [-no-load] [-match-anywhere] <scheme name [scheme options]>");
         return;
       }
-      boolean noScan = false;
-      boolean noLoad = false;
-      boolean matchAnywhere = false;
+      boolean noScan = false;//wxc pro 2017-7-21:13:55:04 scan什么？
+      boolean noLoad = false;//wxc pro 2017-7-21:13:55:19 load什么？
+      boolean matchAnywhere = false;//wxc pro 2017-7-21:13:55:25 match怎么讲?
       boolean dontPromptIfMultipleMatches = false;
 
       if (Utils.getFlag("list-packages", args)) {
-        weka.core.WekaPackageManager.loadPackages(true, true, false);
+        weka.core.WekaPackageManager.loadPackages(true, true, false);//wxc pro 2017-7-21:13:56:05 load一下， 就拉倒了？
         return;
       }
 
