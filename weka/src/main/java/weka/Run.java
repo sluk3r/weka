@@ -173,7 +173,7 @@ public class Run {
       }
 
       if (!noLoad) {
-        weka.core.WekaPackageManager.loadPackages(false, true, false);
+        weka.core.WekaPackageManager.loadPackages(false, true, false); //wxc pro 2017-7-21:17:09:19 这个load概念是一个很关键的东西么？
       }
 
       String schemeToRun = null;

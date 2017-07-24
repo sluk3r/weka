@@ -36,14 +36,14 @@ public interface Associator {
    * @exception Exception if the associator has not been 
    * generated successfully
    */
-  void buildAssociations(Instances data) throws Exception;
+  void buildAssociations(Instances data) throws Exception;//wxc pro 2017-7-24:12:07:14 build完的结果在哪里体现的？
 
-  /** 
+  /**
    * Returns the Capabilities of this associator. Derived associators have to
    * override this method to enable capabilities.
    *
    * @return            the capabilities of this object
    * @see               Capabilities
    */
-  Capabilities getCapabilities();
+  Capabilities getCapabilities(); //wxc pro 2017-7-24:12:06:37 这个概念跟关联有什么必然关系？
 }

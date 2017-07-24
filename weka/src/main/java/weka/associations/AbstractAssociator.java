@@ -37,7 +37,7 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /**
- * Abstract scheme for learning associations. All schemes for learning
+ * Abstract scheme for learning associations. All schemes for learning   //wxc pro 2017-7-24:12:05:32 “learning associations”具体指？
  * associations implemement this class
  *
  * @author Eibe Frank (eibe@cs.waikato.ac.nz)
